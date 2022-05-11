@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+body {
+    font-size:  16px;
+}
+
+div h2 {
+    margin-bottom: 25px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #E5E5E5;
+}
+
+.subsubtext {
+    font-size: 12px;
+    color: #E5E5E5;
+}
+
+/* ================ NAV ================ */
+
+nav {
+    color: #FFF;
+    background-color: #1F1D2C;
+    position: relative;
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; */
+    padding: 40px 30px;
+    text-align: right;
+}
+
+nav span {
+    position: relative;
+    z-index: 99;
+}
+
+nav span a :hover {
+    color: #F1A600;
+}
+
+.nav-container {
+    height: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.nav-container ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #FFF;
+    position: relative;
+    z-index: 99;
+
+    /*padding: 5px 0;*/
+}
+
+.nav-container ul li a:hover {
+    color: #F1A600;
+} 
+
+
+.square-bg-top {
+    position: absolute;
+    background-color: #242635;
+    width: 60vw;
+    height: 60vw;
+    top: 0;
+    right: 0;
+}
+
+/* ================ CONTENT ================ */
+
+#content {
+    background-color: #1F1D2C;
+    padding: 40px 30px;
+    
+}
+
+.container {
+    height: 50vw;
+    width: 100%;
+    position: relative;
+}
+
+#content h1 {
+    position: relative;
+    z-index: 99;
+}
+#content img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+ 
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.intro {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.intro-sub {
+    font-size: 18px;
+}
+
+.info p.intro-sub {
+    margin-bottom: 25px;
+}
+
+.social-icons span {
+    margin-right: 15px;
+}
+/* ================ ABOUT ================ */
+
+#about {
+    background-color: #242635;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.schools {
+    display: flex;
+    justify-content: space-around;
+    /* gap: 65px; */
+    margin-top: 25px;
+}
+
+#about figure img {
+    height: 65px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+/* ================ EXPERIENCE ================ */
+
+#experience {
+    background-color: #1F1D2C;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    align-items: center;
+    border-right: solid 2px #F1A600;
+    position: relative;
+
+}
+
+.jobs div, .jobs h3, .jobs p {
+    text-align: left;
+} 
+
+.square-timeline-top {
+    background-color: #F1A600;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    top: 15px;
+}
+
+.square-timeline-top {
+    background-color: #F1A600;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    top: 35px;
+}
+
+.square-timeline-center {
+    background-color: #F1A600;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    
+}
+
+.square-timeline-bottom {
+    background-color: #F1A600;
+    width: 20px;
+    height: 15px;
+    position: absolute;
+    right: -10px;
+    bottom: 35px;
+    
+}
+/* ================ SKILLS ================ */
+
+#skills {
+    background-color: #1F1D2C;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+#skills h2 {
+    position: relative;
+}
+
+.square-bg {
+    position: absolute;
+    background-color: #242635;
+    width: 43%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.skills-list {
+    display: flex;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.percentage {
+    color: #F1A600;
+}
+
+.skill-item {
+    text-align: left;
+}
+
+/* ================ PORTFOLIO ================ */
+
+#portfolio {
+    background-color: #1F1D2C;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    margin-bottom: 35px;
+}
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.works figure img {
+    width: 100%;
+    box-shadow: 7px -12px #F1A600, -7px -12px #F1A600;
+}
+
+#portfolio figure figcaption {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.img-right {
+    position: relative;
+    right: calc(30px - 30%);
+}
+/* ================ CONTACT ================ */
+
+#contact {
+    background-color: #242635;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.email {
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ================ FOOTER ================ */
+
+footer {
+    background-color: #1F1D2C;
+    padding: 40px 30px;
+    text-align: center;
+}
+
+/* ================ LAYOUT ================ */
+
+/*
+.row {
+    display: flex;
+}
+*/
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}

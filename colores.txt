@@ -1,0 +1,28 @@
+
+
+yellow
+#F1A600
+
+DARKBLUE
+#1F1D2C
+
+DARKGRAY
+#242635
+
+LIGHTGRAY
+#E5E5E5
+
+WHITE
+#FFF
+
+
+# - 30 de abril 10:14
+
+
+
+https://codecary.com/personal-portfolio-website-using-html-css/
+
+
+1,2
+250
+250 -
