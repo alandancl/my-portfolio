@@ -4,6 +4,7 @@
     
 }
 
+
 :root {
     font-family: 'Inter', sans-serif;
     color: #FFF;
@@ -50,7 +51,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end; */
-    padding: 40px 30px;
+    padding: 20px 30px 0px;
     text-align: right;
 }
 
@@ -65,13 +66,14 @@ nav span a :hover {
 
 .nav-container {
     height: 0;
-    visibility: hidden;
+    display: none;
     text-align: center;
 }
 
 .nav-container ul li {
     list-style: none;
     padding: 10px 20px;
+    display: inline-block;
 }
 
 .nav-container ul li a {
@@ -91,8 +93,8 @@ nav span a :hover {
 .square-bg-top {
     position: absolute;
     background-color: #242635;
-    width: 60vw;
-    height: 60vw;
+    width: 65vw;
+    height: 75vw;
     top: 0;
     right: 0;
 }
@@ -101,8 +103,7 @@ nav span a :hover {
 
 #content {
     background-color: #1F1D2C;
-    padding: 40px 30px;
-    
+    padding: 20px 30px 40px;
 }
 
 .container {
@@ -133,7 +134,7 @@ nav span a :hover {
 
 .intro {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .intro-sub {
@@ -141,7 +142,7 @@ nav span a :hover {
 }
 
 .info p.intro-sub {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .social-icons span {
@@ -414,17 +415,28 @@ footer {
         color: #E5E5E5;
     }
 
+    /* ================ NAV ================ */
+
+    nav {
+        padding: 50px 90px 0px;
+    }
+
     /* ================ CONTENT ================ */
 
     #content {
-        padding: 80px 90px;
+        padding: 40px 90px 80px;
         
     }
 
     .intro {
         font-size: 30px;
+        margin-bottom: 25px;
     }
-    
+
+    .info p.intro-sub {
+        margin-bottom: 25px;
+    }
+
     .intro-sub {
         font-size: 24px;
     }
@@ -475,4 +487,139 @@ footer {
     footer {
         padding: 80px 90px;
     }
+}
+
+
+@media (min-width: 992px) {
+    
+    body {
+        background-color: #1F1D2C;
+    }
+    /* ================ NAV ================ */
+
+    .square-bg-top {
+        width: calc(992px * 0.65);
+        height: calc(992px * 0.70);
+        /* right: calc(992px * 0.75); */
+        right: calc((100vw - (992px + 90px + 90px))/2);
+
+    }
+
+    /* ================ CONTENT ================ */
+
+    #content {
+        max-width: 992px;
+        margin: auto;
+        padding: 40px 90px 80px;
+    }
+    
+    .container {
+        height: 500px;
+    }
+
+    /* ================ ABOUT ================ */
+
+    #about {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    .schools {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    /* ================ EXPERIENCE ================ */
+
+    #experience {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    .jobs {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /* ================ SKILLS ================ */
+
+    #skills {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    
+    /* ================ PORTFOLIO ================ */
+
+    #portfolio {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    .img-right {
+        left: calc(992px - (992px * 0.5833));
+    }
+
+    /* ================ CONTACT ================ */
+
+    #contact {
+        max-width: 992px;
+        margin: auto;
+    }
+
+    .email {
+        top: 0;
+    }
+
+    /* ================ LAYOUT ================ */
+
+    .col-l-6 {
+        width: 50%;
+    }
+
+    .col-l-4 {
+        width: 33.33%;
+    }
+
+    .col-l-8 {
+        width: 66.66%;
+    }
+
+    .col-l-1 {
+        width: 8.33%;
+    }
+
+    .col-l-2 {
+        width: 16.66%;
+    }
+
+    .col-l-3 {
+        width: 25%;
+    }
+
+    .col-l-5 {
+        width: 41.66%;
+    }
+
+    .col-l-7 {
+        width: 58.33%;
+    }
+
+    .col-l-9 {
+        width: 75%;
+    }
+
+    .col-l-10 {
+        width: 83.33%;
+    }
+
+    .col-l-11 {
+        width: 91.66%;
+    }
+
+    .col-l-12 {
+        width: 100%;
+    }
+
 }
