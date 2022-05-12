@@ -429,6 +429,10 @@ footer {
         font-size: 24px;
     }
     
+    .icon-size {
+        width: 32px;
+        height: 32px;
+    }
     /* ================ ABOUT ================ */
 
     #about {
