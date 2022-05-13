@@ -60,23 +60,21 @@ nav span {
     z-index: 99;
 }
 
-nav span a :hover {
-    color: #F1A600;
+nav span a svg.hamburger-me:hover {
+    stroke:#F1A600;
 }
 
-.nav-container {
-    height: 0;
+#nav-container {
     display: none;
     text-align: center;
 }
 
-.nav-container ul li {
+#nav-container ul li {
     list-style: none;
     padding: 10px 20px;
-    display: inline-block;
 }
 
-.nav-container ul li a {
+#nav-container ul li a {
     text-decoration: none;
     color: #FFF;
     position: relative;
@@ -85,8 +83,9 @@ nav span a :hover {
     /*padding: 5px 0;*/
 }
 
-.nav-container ul li a:hover {
-    color: #F1A600;
+#nav-container ul li a:hover {
+    color: #1F1D2C;
+    background-color: #F1A600;
 } 
 
 
@@ -147,6 +146,10 @@ nav span a :hover {
 
 .social-icons span {
     margin-right: 15px;
+}
+
+.social-icons span svg:hover {
+    fill: black;
 }
 
 /* ================ ABOUT ================ */
@@ -505,6 +508,27 @@ footer {
 
     }
 
+    nav span a {
+        display: none;
+    }
+
+    #nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 992px;
+        margin: auto;
+    }
+
+    #nav-container ul li {
+        display: inline-block;
+    }
+
+    #nav-container ul li a:hover {
+        color: #F1A600;
+        background-color: transparent;
+    } 
+
     /* ================ CONTENT ================ */
 
     #content {
@@ -526,7 +550,7 @@ footer {
 
     .schools {
         width: 60%;
-        margin: 0 auto;
+        margin: 25px auto 0;
     }
 
     /* ================ EXPERIENCE ================ */
@@ -557,6 +581,8 @@ footer {
         margin: auto;
     }
 
+    
+
     .img-right {
         left: calc(992px - (992px * 0.5833));
     }
@@ -568,8 +594,19 @@ footer {
         margin: auto;
     }
 
+    .contacts {
+        width: 60%;
+        margin: 25px auto 0;
+    }
+
     .email {
         top: 0;
+        margin-bottom: 0;
+    }
+
+    .contact-icon-size {
+        width: 60px;
+        height: 60px;
     }
 
     /* ================ LAYOUT ================ */
