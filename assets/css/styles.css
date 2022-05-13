@@ -498,6 +498,12 @@ footer {
     body {
         background-color: #1F1D2C;
     }
+
+    h1 {
+        font-size: 100px;
+        margin-bottom: 10px;
+    }
+
     /* ================ NAV ================ */
 
     .square-bg-top {
@@ -538,7 +544,29 @@ footer {
     }
     
     .container {
-        height: 500px;
+        height: 600px;
+    }
+
+    .intro {
+        font-size: 42px;
+        margin-bottom: 30px;
+    }
+
+    .info p.intro-sub {
+        margin-bottom: 30px;
+    }
+
+    .intro-sub {
+        font-size: 32px;
+    }
+
+    .icon-size {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icons span {
+        margin-right: 24px;
     }
 
     /* ================ ABOUT ================ */
