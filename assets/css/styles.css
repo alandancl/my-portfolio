@@ -514,7 +514,7 @@ footer {
 
     }
 
-    nav span a {
+    nav span a.icon {
         display: none;
     }
 
